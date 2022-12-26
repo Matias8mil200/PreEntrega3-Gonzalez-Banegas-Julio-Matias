@@ -1,0 +1,12 @@
+#imagen {
+    /*la imagen del index tiene un borde redondeado*/
+    border-radius: 350px;
+    max-width: 1880px; }
+  
+  .fotos {
+    display: block;
+    /*con estas etiquetas se centra la imagen de manera horizontal*/
+    border-radius: 200px;
+    position: relative;
+    left: 50%;
+    top: 22px; }

@@ -1,0 +1,334 @@
+@charset "UTF-8";
+/*VARIABLES DE SASS importadas de la carpeta variables.scss*/
+p {
+  font-size: 20px;
+  color: #e76418; }
+
+.doce {
+  display: block;
+  padding: auto;
+  text-align: center; }
+
+span {
+  /*resalte una pequeña parte del texto en el articulo "JUMBO"*/
+  color: #00ff22; }
+
+nav
+a {
+  color: #1f0c88;
+  background-color: red;
+  padding: 15px 30px;
+  width: 60px;
+  border-radius: 12px;
+  text-decoration: none; }
+  nav
+a:hover {
+    /*efecto cuando pasa el puntero por encima de los botones*/
+    background-color: transparent;
+    border: 2px solid red;
+    color: bisque; }
+
+body {
+  /*imagen de fondo fija para todo el sitio*/
+  background-image: url(../Imagenes/2018-wallpaper.jpg);
+  padding: auto; }
+
+form {
+  /*COLOR de los textos del formulario ANARANJADO FUERTE*/
+  color: #ff3c00; }
+
+footer {
+  /*color para el pie de pagina*/
+  color: azure; }
+
+#arbitro {
+  font-family: 'Rubik Distressed', cursive;
+  /*titulo principal*/
+  color: #3cff00;
+  margin-top: 55px;
+  text-align: center; }
+
+.treinta {
+  /*titulo de los articulos a vender*/
+  color: #ff5e00;
+  content: center;
+  margin-top: 55px;
+  border-radius: 15px;
+  text-align: center; }
+
+#imagen {
+  /*la imagen del index tiene un borde redondeado*/
+  border-radius: 350px;
+  max-width: 1880px; }
+
+.fotos {
+  display: block;
+  /*con estas etiquetas se centra la imagen de manera horizontal*/
+  border-radius: 200px;
+  position: relative;
+  left: 50%;
+  top: 22px; }
+
+div table {
+  margin: auto;
+  text-align: center;
+  color: #ff7b00; }
+
+nav {
+  text-align: center;
+  text-decoration: none;
+  padding-left: center;
+  position: fixed;
+  top: 16px; }
+
+form {
+  display: block;
+  margin-top: 55px;
+  color: #ff3c00; }
+
+.fotos1 {
+  display: block;
+  border-radius: 200px;
+  position: absolute;
+  left: 10%;
+  bottom: 425px; }
+
+h1 {
+  border-radius: 15px;
+  background-color: bisque;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  max-width: 370px; }
+
+.contenedor {
+  display: flex;
+  justify-content: space-evenly; }
+
+.radio {
+  border-radius: 40px;
+  margin-top: 20px; }
+
+.contenedor2 {
+  display: flex; }
+
+/*grid implisito para la pagina YAMAHA*/
+.contenedor3 {
+  margin-top: 50px;
+  color: #15c232;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 70px 30% 1fr;
+  grid-template-areas: "yam yam" "do un" "te te"; }
+
+.contenedor3 h2 {
+  text-align: center;
+  grid-area: yam; }
+
+.primera-foto {
+  margin: auto;
+  border-radius: 300px;
+  grid-area: un; }
+
+.segunda-foto {
+  margin: auto;
+  border-radius: 300px;
+  grid-area: do; }
+
+.texto-de-yamaha {
+  grid-area: te;
+  text-align: center; }
+
+.slide-top {
+  -webkit-animation: slide-top 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
+  animation: slide-top 4s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both; }
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  100% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px); } }
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+  100% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px); } }
+
+.rotate-scale-up {
+  -webkit-animation: rotate-scale-up 4s linear infinite both;
+  animation: rotate-scale-up 4s linear infinite both; }
+
+@-webkit-keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0); }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg); }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg); } }
+
+@keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0); }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg); }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+    transform: scale(1) rotateZ(360deg); } }
+
+.slide-fwd-center {
+  -webkit-animation: slide-fwd-center 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both;
+  animation: slide-fwd-center 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite both; }
+
+@-webkit-keyframes slide-fwd-center {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); }
+  100% {
+    -webkit-transform: translateZ(160px);
+    transform: translateZ(160px); } }
+
+@keyframes slide-fwd-center {
+  0% {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0); }
+  100% {
+    -webkit-transform: translateZ(160px);
+    transform: translateZ(160px); } }
+
+/*aca comienza la parte responsive*/
+/*tablet*/
+@media (max-width: 1024px) {
+  #arbitro {
+    font-family: 'Rubik Distressed', cursive;
+    /*titulo principal*/
+    color: #ff0022;
+    margin-top: 55px;
+    text-align: center; }
+  #imagen {
+    /*la imagen del index tiene un borde redondeado*/
+    border-radius: 350px;
+    max-width: 850px;
+    margin: auto; }
+  body {
+    /*imagen de fondo fija para todo el sitio*/
+    background-image: url(../Imagenes/fondo-general-para-tablet.jpg);
+    padding: auto; }
+  .treinta {
+    /*titulo de los articulos a vender*/
+    color: #1cc4ee;
+    margin-top: 55px;
+    border-radius: 15px;
+    text-align: center; }
+  div table {
+    margin: auto;
+    text-align: center;
+    color: #33ff00; }
+  nav a {
+    /*diseño de los enlaces externos con apariencia de botones*/
+    color: #eb082e;
+    background-color: #fbff00;
+    padding: 15px 30px;
+    width: 60px;
+    border-radius: 12px;
+    text-decoration: none; }
+  nav {
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    padding-left: center;
+    position: fixed;
+    top: 16px; }
+  .contenedor2 {
+    display: flex; }
+  .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    /*con esto pongo a las imagenes contenidas en 1 fila por el tamaño de la pantalla*/ }
+  .radio {
+    max-width: 800px;
+    /*les doy un llimite de ancho a las fotos para evitar que se deformen*/ } }
+
+/* RESPONSIVE PARA CELULARES*/
+@media (max-width: 768px) {
+  #arbitro {
+    font-family: 'Rubik Distressed', cursive;
+    /*titulo principal*/
+    color: #00ffbf;
+    margin-top: 55px;
+    text-align: center; }
+  #imagen {
+    /*la imagen del index tiene un borde redondeado*/
+    border-radius: 350px;
+    max-width: 650px;
+    margin: auto; }
+  body {
+    /*imagen de fondo fija para todo el sitio*/
+    background-image: url(../Imagenes/fondo-imagen-para-celular-responsive.jpg);
+    padding: auto; }
+  nav a {
+    color: #0d0e0d;
+    background-color: #0099ff;
+    padding: 15px 30px;
+    width: 60px;
+    border-radius: 12px;
+    text-decoration: none; }
+  nav {
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    padding-left: center;
+    position: fixed;
+    top: 16px; }
+  a:hover {
+    /*efecto cuando pasa el puntero por encima de los botones*/
+    background-color: transparent;
+    border: 2px solid #f59797;
+    color: #07cf07; }
+  /*grid implisito para la pagina YAMAHA*/
+  .contenedor3 {
+    margin-top: 50px;
+    color: #ff2600;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr 1fr 30%;
+    grid-template-areas: "yam" "do" "un" "te"; }
+  .contenedor3 h2 {
+    text-align: center;
+    grid-area: yam; }
+  .primera-foto {
+    margin: auto;
+    border-radius: 300px;
+    grid-area: un; }
+  .segunda-foto {
+    margin: auto;
+    border-radius: 300px;
+    grid-area: do; }
+  .texto-de-yamaha {
+    grid-area: te;
+    text-align: center; }
+  .treinta {
+    /*titulo de los articulos a vender*/
+    color: #00ff62;
+    content: center;
+    margin-top: 55px;
+    border-radius: 15px;
+    text-align: center; }
+  .contenedor {
+    display: block;
+    margin: auto; }
+  .contenedor2 {
+    display: block; }
+  div table {
+    margin: auto;
+    text-align: center;
+    color: #ff1100; } }
